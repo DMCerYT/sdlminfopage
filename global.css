@@ -1,44 +1,164 @@
 @import url(https://fonts.googleapis.com/css?family=Tangerine);
 
 body {
+    margin: 0;
     font-family: "Libre Franklin", sans-serif;
 }
 
-.hsmsa-header {
-    font-family: 'Tangerine', serif;
-    font-size: 10vh;
+@media only screen and (max-width: 1199px) {
+    /* for mobile phones */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #572364;
+        color: white;
+        text-align: center;
+    }
+    
+    .navbar-icon {
+        display: inline-block;
+        position: relative;
+        height: 20vh;
+    }
+    
+    .navbar-icon img {
+        position: absolute;
+        height: 100%;
+    }
+    
+    .hsmsa-header {
+        margin: 0;
+        background-image: linear-gradient(to right, rgba(87,35,100,0) 0%,rgba(87,35,100,0.5) 8%,rgba(87,35,100,0.75) 13%,rgba(87,35,100,0.88) 16%,rgba(87,35,100,1) 19%,rgba(87,35,100,1) 95%, rgba(87,35,100,0) 100%);;
+        position: absolute;
+        height: 100%;
+        left: 16vh;
+    }
+    
+    .hsmsa-header h1 {
+        font-family: 'Tangerine', serif;
+        font-size: 9vh;
+    }
+    
+    .hsmsa-subtitle {
+        position: absolute;
+        top: 12vh;
+    }
+    
+    .hsmsa-subtitle p {
+        color: white;
+        font-family: 'Tangerine', serif;
+        font-size: 2.49vh;
+    }
+    
+    .navbar-links {
+        display: flex;
+        margin-top: 20vh;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    
+    .nav-spacer {
+        color: #572364;
+    }
+    
+    .nav-link {
+        background-color: #572364;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .nav-link a {
+        font-family: "Anton SC", sans-serif;
+        font-size: 5vh;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .content {
+        margin: 10px;
+    }
 }
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #572364;
-    color: white;
-    text-align: center;
-}
-
-.navbar-links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.nav-spacer {
-    color: #572364;
-}
-
-.nav-link {
-    background-color: #572364;
-    padding: 10px;
-}
-
-.nav-link a {
-    font-family: "Anton SC", sans-serif;
-    color: white;
-    text-decoration: none;
+@media only screen and (min-width: 1200px) {
+    /* for desktops */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #572364;
+        color: white;
+        text-align: center;
+    }
+    
+    .navbar-icon {
+        display: inline-block;
+        position: relative;
+        height: 20vh;
+    }
+    
+    .navbar-icon img {
+        position: absolute;
+        height: 100%;
+    }
+    
+    .hsmsa-header {
+        margin: 0;
+        background-image: linear-gradient(to right, rgba(87,35,100,0) 0%,rgba(87,35,100,0.5) 8%,rgba(87,35,100,0.75) 13%,rgba(87,35,100,0.88) 16%,rgba(87,35,100,1) 19%,rgba(87,35,100,1) 95%, rgba(87,35,100,0) 100%);;
+        position: absolute;
+        height: 100%;
+        left: 16vh;
+    }
+    
+    .hsmsa-header h1 {
+        font-family: 'Tangerine', serif;
+        font-size: 9vh;
+    }
+    
+    .hsmsa-subtitle {
+        position: absolute;
+        top: 12vh;
+    }
+    
+    .hsmsa-subtitle p {
+        color: white;
+        font-family: 'Tangerine', serif;
+        font-size: 2.49vh;
+    }
+    
+    .navbar-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    
+    .nav-spacer {
+        color: #572364;
+    }
+    
+    .nav-link {
+        background-color: #572364;
+        padding: 20px;
+    }
+    
+    .nav-link a {
+        font-family: "Anton SC", sans-serif;
+        font-size: 5vh;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .content {
+        margin: 10px;
+    }
 }
