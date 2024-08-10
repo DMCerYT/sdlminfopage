@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+}
+
+.hsmsa-header {
+    font-family: 'Tangerine', serif;
+    font-size: 10vh;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #572364;
+    color: white;
+    text-align: center;
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-spacer {
+    color: #572364;
+}
+
+.nav-link {
+    background-color: #572364;
+    padding: 10px;
+}
+
+.nav-link a {
+    font-family: "Anton SC", sans-serif;
+    color: white;
+    text-decoration: none;
+}
