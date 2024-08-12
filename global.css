@@ -33,6 +33,7 @@ body {
         position: absolute;
         height: 100%;
         left: 16vh;
+        
     }
     
     .hsmsa-header h1 {
@@ -78,6 +79,7 @@ body {
         font-family: "Anton SC", sans-serif;
         font-size: 5vh;
         color: white;
+        transition: color 0.2s ease-in-out;
         text-decoration: none;
     }
     
@@ -155,10 +157,21 @@ body {
         font-family: "Anton SC", sans-serif;
         font-size: 5vh;
         color: white;
+        transition: color 0.2s ease-in-out;
         text-decoration: none;
     }
     
     .content {
         margin: 10px;
     }
+}
+
+.nav-link a:hover {
+    color: #FFF29E;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link a:active {
+    color: #F2FF38;
+    transition: color 0.1s ease-in-out;
 }

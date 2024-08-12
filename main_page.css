@@ -1,0 +1,91 @@
+.content {
+    margin: 0px;
+}
+
+.section1 {
+    background-color: yellow;
+    display: flex;
+}
+
+.section1 img {
+    height: 50vh;
+}
+
+.carousel-container {
+    flex: 4 1 80vh;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+  }
+
+
+    @media only screen and (max-width: 1199px) {
+        .carousel-text {
+            position: absolute;
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Adjust centering */
+            z-index: 20; /* Higher than slides, so it appears on top */
+            color: white; /* Adjust text color */
+            font-size: 2rem; /* Adjust font size */
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.4); /* Optional: add a semi-transparent background */
+            padding: 10px 20px;
+            border-radius: 15px;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        .carousel-text {
+            position: absolute;
+            top: 70%; /* Center vertically */
+            left: 10px; /* Center horizontally */
+            transform: translate(0%, 0%); /* Adjust centering */
+            z-index: 20; /* Higher than slides, so it appears on top */
+            color: white; /* Adjust text color */
+            font-size: 2rem; /* Adjust font size */
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.4); /* Optional: add a semi-transparent background */
+            padding: 10px 15px;
+            border-radius: 15px;
+        }
+    }
+  
+  .carousel-slide {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    animation: slide-animation 30s infinite; /* 3 slides x 10 seconds each */
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    display: block;
+    height: 80vh;
+    object-fit: cover;
+    transition: transform 10s ease-in-out;
+  }
+  
+  .carousel-slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .carousel-slide:nth-child(2) {
+    animation-delay: 10s;
+  }
+  
+  .carousel-slide:nth-child(3) {
+    animation-delay: 20s;
+  }
+  
+  @keyframes slide-animation {
+    0% { opacity: 0; transform: scale(1); }
+    10% { opacity: 1; transform: scale(1.05); }
+    33.33% { opacity: 1; transform: scale(1.05); } /* Zoom-in effect */
+    43.33% { opacity: 0; transform: scale(1.1); }
+    100% { opacity: 0; transform: scale(1); }
+  }
+
+.header-main-page {
+    text-align: center;
+}
